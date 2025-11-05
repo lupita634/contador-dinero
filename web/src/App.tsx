@@ -1,0 +1,3 @@
+import ContadorDinero from './ContadorDinero'
+...
+<ContadorDinero />

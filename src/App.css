@@ -1,0 +1,161 @@
+body {
+  background: linear-gradient(135deg, #d5f3f1, #f8e8f8);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 300px;
+  flex: 1 1 280px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #4c4c9d;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.fila span {
+  font-size: 1rem;
+}
+
+.fila input {
+  width: 60px;
+  text-align: center;
+  border: 2px solid #b2dfdb;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.fila input:focus {
+  outline: none;
+  border-color: #4db6ac;
+  background-color: #e0f2f1;
+}
+
+.igual {
+  color: #888;
+  font-weight: bold;
+}
+
+.resultado {
+  min-width: 60px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.total {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #00796b;
+}
+
+.total-general {
+  margin-top: 30px;
+  background: #e0f7fa;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00695c;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 📱 Diseño responsivo */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.7rem;
+  }
+
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .fila span {
+    font-size: 0.95rem;
+  }
+
+  .fila input {
+    width: 55px;
+    font-size: 0.95rem;
+  }
+
+  .total-general {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .fila {
+    gap: 5px;
+  }
+
+  .fila input {
+    width: 50px;
+  }
+
+  .total-general {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+}
